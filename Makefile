@@ -29,3 +29,7 @@ format:
 	@poetry run yapf ./app -i --recursive
 	@poetry run isort ./app
 	@poetry run ruff check ./app --fix
+
+
+run:
+	export FLASK_APP=app/main.py && poetry run python -m flask run
