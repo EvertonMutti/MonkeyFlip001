@@ -14,7 +14,7 @@ Este projeto consiste em uma API desenvolvida em Python + Flask com o mínimo de
 
 1. Clone o repositório:
    ```sh
-   git clone <URL_DO_REPOSITORIO>
+   git clone [<URL_DO_REPOSITORIO>](https://github.com/EvertonMutti/MonkeyFlip001.git)
    cd <NOME_DO_PROJETO>
    ```
 
@@ -28,7 +28,7 @@ Este projeto consiste em uma API desenvolvida em Python + Flask com o mínimo de
 
 1. Clone o repositório:
    ```sh
-   git clone <URL_DO_REPOSITORIO>
+   git clone [<URL_DO_REPOSITORIO>](https://github.com/EvertonMutti/MonkeyFlip001.git)
    cd <NOME_DO_PROJETO>
    ```
 
