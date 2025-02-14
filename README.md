@@ -15,7 +15,7 @@ Este projeto consiste em uma API desenvolvida em Python + Flask com o mínimo de
 1. Clone o repositório:
    ```sh
    git clone https://github.com/EvertonMutti/MonkeyFlip001.git
-   cd <NOME_DO_PROJETO>
+   cd MonkeyFlip001
    ```
 
 2. Clone o repositório:
@@ -29,7 +29,7 @@ Este projeto consiste em uma API desenvolvida em Python + Flask com o mínimo de
 1. Clone o repositório:
    ```sh
    git clone https://github.com/EvertonMutti/MonkeyFlip001.git
-   cd <NOME_DO_PROJETO>
+   cd MonkeyFlip001
    ```
 
 2. Clone o repositório:
@@ -45,5 +45,5 @@ O arquivo requirements.txt contém tanto as dependências de produção quanto a
 ## ▶️ Executando a API
 Após a instalação, você pode rodar a API com o seguinte comando:
 ```sh
-poetry run python -m flask run
+make run
 ```
