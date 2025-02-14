@@ -1,0 +1,70 @@
+2025-02-14 18:53:06 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 18:53:06 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
+2025-02-14 18:54:19 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 18:54:19 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
+2025-02-14 18:54:56 - [app.utils.INFO] - CSV file 'ads_summary_all_platforms.csv.csv' generated successfully. (utils.py:33)
+2025-02-14 18:54:56 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 18:54:56] "GET /geral/resumo HTTP/1.1" 200 - (_internal.py:97)
+2025-02-14 18:56:41 - [app.utils.INFO] - CSV file 'ads_summary_all_platforms.csv.csv' generated successfully. (utils.py:33)
+2025-02-14 18:56:41 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 18:56:41] "GET /geral/resumo HTTP/1.1" 200 - (_internal.py:97)
+2025-02-14 18:57:51 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 18:57:51 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
+2025-02-14 19:02:29 - [main.ERROR] - Exception on /geral/resumo [GET] (app.py:875)
+Traceback (most recent call last):
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/.venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/.venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/.venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/.venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/app/routes.py", line 145, in ads_summary_all_platforms
+    spend = aggregated_data[platform_name]["spend"]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'spend'
+2025-02-14 19:02:29 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 19:02:29] "[35m[1mGET /geral/resumo HTTP/1.1[0m" 500 - (_internal.py:97)
+2025-02-14 19:03:55 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 19:03:55 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
+2025-02-14 19:04:57 - [app.utils.ERROR] - Error generating CSV: dict contains fields not in fieldnames: 'Cost per Click' (utils.py:47)
+Traceback (most recent call last):
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/app/utils.py", line 27, in generate_csv
+    writer.writerows(data)
+  File "/home/everton/.pyenv/versions/3.12.2/lib/python3.12/csv.py", line 167, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/everton/.pyenv/versions/3.12.2/lib/python3.12/csv.py", line 159, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'Cost per Click'
+2025-02-14 19:04:57 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 19:04:57] "[35m[1mGET /geral/resumo HTTP/1.1[0m" 503 - (_internal.py:97)
+2025-02-14 19:05:29 - [app.utils.ERROR] - Error generating CSV: dict contains fields not in fieldnames: 'Cost per Click' (utils.py:47)
+Traceback (most recent call last):
+  File "/mnt/c/Users/Everton/Documents/Github/Stract/MonkeyFlipe001/app/utils.py", line 27, in generate_csv
+    writer.writerows(data)
+  File "/home/everton/.pyenv/versions/3.12.2/lib/python3.12/csv.py", line 167, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/everton/.pyenv/versions/3.12.2/lib/python3.12/csv.py", line 159, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'Cost per Click'
+2025-02-14 19:05:29 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 19:05:29] "[35m[1mGET /geral/resumo HTTP/1.1[0m" 503 - (_internal.py:97)
+2025-02-14 19:07:50 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 19:07:50 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
+2025-02-14 19:08:04 - [app.utils.INFO] - CSV file 'ads_summary_all_platforms.csv' generated successfully. (utils.py:33)
+2025-02-14 19:08:04 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 19:08:04] "GET /geral/resumo HTTP/1.1" 200 - (_internal.py:97)
+2025-02-14 19:08:24 - [app.utils.INFO] - CSV file 'ads_summary_all_platforms.csv' generated successfully. (utils.py:33)
+2025-02-14 19:08:24 - [werkzeug.INFO] - 127.0.0.1 - - [14/Feb/2025 19:08:24] "GET /geral/resumo HTTP/1.1" 200 - (_internal.py:97)
+2025-02-14 19:29:43 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 19:29:43 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
+2025-02-14 19:36:19 - [werkzeug.INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 (_internal.py:97)
+2025-02-14 19:36:19 - [werkzeug.INFO] - [33mPress CTRL+C to quit[0m (_internal.py:97)
