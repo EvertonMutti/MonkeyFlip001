@@ -47,3 +47,6 @@ Após a instalação, você pode rodar a API com o seguinte comando:
 ```sh
 make run
 ```
+
+## 💡 Observações: 
+O parâmetro {platform} deve receber o nome da plataforma codificado como texto. Por exemplo, para consumir a API, envie valores como Google%20Analytics, Facebook%20Ads ou TikTok.
